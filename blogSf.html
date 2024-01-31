@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cliff_House_from_Ocean_Beach.jpg/1024px-Cliff_House_from_Ocean_Beach.jpg');
+      background-size: cover;
+      color: rgba(0,20,0,0.9);
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+    body {
+      background: rgba(0,15,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_San_Francisco.svg/150px-Flag_of_San_Francisco.svg.png">
+    <h1>San Franciso Blog</h1>
+    <ul>
+      <li><a href="#">About the City</a></li>
+      <li><a href="#">What to visit</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>City</h2>
+    <p>The City and County of San Francisco, is the commercial, financial, and cultural center of Northern California. The city proper is the fourth most populous city in California, with 808,437 residents, and the 17th most populous city in the United States as of 2022.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Arts and culture</h2>
+    <p>San Francisco's War Memorial and Performing Arts Center hosts some of the most enduring performing-arts companies in the country. The War Memorial Opera House houses the San Francisco Opera, the second-largest opera company in North America[285] as well as the San Francisco Ballet, while the San Francisco Symphony plays in Davies Symphony Hall. Opened in 2013, the SFJAZZ Center hosts jazz performances year round..</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Geography</h2>
+    <p>San Francisco is located on the West Coast of the United States, at the north end of the San Francisco Peninsula and includes significant stretches of the Pacific Ocean and San Francisco Bay within its boundaries.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
